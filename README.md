@@ -35,16 +35,24 @@ Other: bcrypt, smtplib, deep_translator, pyngrok
 
 📸 Screenshots
 Login/Register pages 
-![WhatsApp Image 2025-06-12 at 10 31 54_cdf15042](https://github.com/user-attachments/assets/6311ad76-cf86-435c-b61f-d918ad483f8a)
+![WhatsApp Image 2025-06-12 at 10 32 36_f296efd1](https://github.com/user-attachments/assets/c51cc4e0-3fdc-49db-8f41-3f26533b56ac)
 
 
 light/dark mode
+![WhatsApp Image 2025-06-12 at 10 32 35_42bca2c7](https://github.com/user-attachments/assets/5ffc0eaf-179a-4a7a-8454-9e0e0320b8b3)
 
-Home dashboard and feature cards
+
+Home dashboard 
+![WhatsApp Image 2025-06-12 at 10 32 35_488a9999](https://github.com/user-attachments/assets/6b7ab279-0dcd-4384-8a5c-fb9f05150e8f)
+
 
 Similarity result page with Google Search integration
+![WhatsApp Image 2025-06-12 at 10 32 35_0cea0516](https://github.com/user-attachments/assets/0c459946-c7de-4932-9ebf-d8ee7b13440e)
+
 
 Search history table
+![WhatsApp Image 2025-06-12 at 10 31 54_8f7085bc](https://github.com/user-attachments/assets/d3f3cb19-383d-4337-9b7a-a8f0354e677d)
+
 
 📂 Project Structure
 bash
@@ -102,20 +110,9 @@ admin	admin123
 🛡️ Security Notes
 Replace all placeholder secrets before deployment (app.secret_key, Gmail password, etc.)
 
-Consider using environment variables for credentials
-
-📜 License
-MIT License
-
-Would you like me to also generate a requirements.txt file based on the imports in your script?
 
 
 
-
-
-
-
-Is this conversation helpful so far?
 
 
 
