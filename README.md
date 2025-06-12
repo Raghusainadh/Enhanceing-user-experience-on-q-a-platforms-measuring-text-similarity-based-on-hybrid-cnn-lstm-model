@@ -40,6 +40,8 @@ Login/Register pages
 
 light/dark mode
 ![WhatsApp Image 2025-06-12 at 10 32 35_42bca2c7](https://github.com/user-attachments/assets/5ffc0eaf-179a-4a7a-8454-9e0e0320b8b3)
+![WhatsApp Image 2025-06-12 at 10 31 54_ffcc6451](https://github.com/user-attachments/assets/78875bfb-1377-4353-9a07-7bf8ae49b979)
+
 
 
 Home dashboard 
@@ -53,62 +55,56 @@ Similarity result page with Google Search integration
 Search history table
 ![WhatsApp Image 2025-06-12 at 10 31 54_8f7085bc](https://github.com/user-attachments/assets/d3f3cb19-383d-4337-9b7a-a8f0354e677d)
 
+🧩 Components Breakdown
+✅ Authentication
+login, register, logout, /verify/<token>
 
-📂 Project Structure
-bash
-Copy
-Edit
-.
-├── cnn &lstm.py          # Main application code
-├── templates/            # HTML templates (inline in code)
-├── static/               # Static assets like images (referenced in code)
-├── project.db            # User credentials DB
-└── your_database.db      # Search history DB
-🔧 Setup Instructions
-Clone the repo:
+Secure password hashing with bcrypt
 
-bash
-Copy
-Edit
-git clone https://github.com/yourusername/question-similarity-checker.git
-cd question-similarity-checker
-Install requirements:
+Email verification with tokens and expiry
 
-bash
-Copy
-Edit
-pip install -r requirements.txt
-Add your Ngrok auth token:
+🧠 NLP Models
+SentenceTransformer: multilingual semantic similarity
 
-python
-Copy
-Edit
-ngrok.set_auth_token("YOUR_AUTHTOKEN")
-Update Gmail credentials in send_verification_email:
+BERT: classification-based comparison
 
-python
-Copy
-Edit
-gmail_user = 'your_email@gmail.com'
-gmail_app_password = 'your_app_password'  # Enable 2FA and use App Password
-Run the app:
+Deep Translator for Telugu → English
 
-bash
-Copy
-Edit
-python "cnn &lstm.py"
-Access app via:
+Cosine similarity + softmax scoring
 
-Localhost: http://localhost:5001
+📊 Databases
+project.db: user credentials, roles, tokens
 
-Ngrok URL: (shown in terminal)
+your_database.db: search history with timestamp, score
 
-✅ Default Admin
-Username	Password
-admin	admin123
+🌐 Routes (Flask)
+/ or /home: Landing page
 
-🛡️ Security Notes
-Replace all placeholder secrets before deployment (app.secret_key, Gmail password, etc.)
+/login, /register: Auth routes
+
+/compare: Enter and compare questions
+
+/history: Logged-in user's past comparisons
+
+/verify/<token>: Email verification
+
+/logout: Session clear
+
+🎨 Frontend (Inline or External HTML)
+Bootstrap 5 styling with dark mode support
+
+Result page shows:
+
+Questions
+
+Similarity score
+
+Optional Google search link
+
+
+
+
+
 
 
 
