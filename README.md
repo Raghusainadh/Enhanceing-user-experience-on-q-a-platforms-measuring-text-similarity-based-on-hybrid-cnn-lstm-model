@@ -1,28 +1,28 @@
-🧠 Question Similarity Checker (Multilingual AI-Powered)
+ Question Similarity Checker (Multilingual AI-Powered)
 This project is a Flask-based web application that allows users to compare two questions and determine their semantic similarity using AI/ML models (Sentence-BERT and BERT). It supports multilingual input (including Telugu) and provides an intuitive UI with authentication, search history, and email verification.
 
-🚀 Features
-🔐 User Authentication with secure password hashing
+ Features
+ User Authentication with secure password hashing
 
-✉️ Email verification system using Gmail SMTP
+ Email verification system using Gmail SMTP
 
-🌍 Multilingual support via Google Translate (e.g., Telugu → English)
+ Multilingual support via Google Translate (e.g., Telugu → English)
 
-🧠 Dual-model comparison:
+ Dual-model comparison:
 
 Sentence-BERT (paraphrase-xlm-r-multilingual-v1)
 
 BERT Classification (bert-base-uncased)
 
-📊 Cosine similarity scoring
+ Cosine similarity scoring
 
-💡 Dark mode UI
+ Dark mode UI
 
-🕓 Search history logging (SQLite)
+ Search history logging (SQLite)
 
-🌐 Public access via Ngrok
+ Public access via Ngrok
 
-🛠️ Tech Stack
+ Tech Stack
 Backend: Python, Flask
 
 AI Models: SentenceTransformer, transformers, torch, BERT
@@ -55,15 +55,15 @@ Similarity result page with Google Search integration
 Search history table
 ![WhatsApp Image 2025-06-12 at 10 31 54_8f7085bc](https://github.com/user-attachments/assets/d3f3cb19-383d-4337-9b7a-a8f0354e677d)
 
-🧩 Components Breakdown
-✅ Authentication
+ Components Breakdown
+ Authentication
 login, register, logout, /verify/<token>
 
 Secure password hashing with bcrypt
 
 Email verification with tokens and expiry
 
-🧠 NLP Models
+ NLP Models
 SentenceTransformer: multilingual semantic similarity
 
 BERT: classification-based comparison
@@ -72,12 +72,12 @@ Deep Translator for Telugu → English
 
 Cosine similarity + softmax scoring
 
-📊 Databases
+ Databases
 project.db: user credentials, roles, tokens
 
 your_database.db: search history with timestamp, score
 
-🌐 Routes (Flask)
+ Routes (Flask)
 / or /home: Landing page
 
 /login, /register: Auth routes
@@ -90,7 +90,7 @@ your_database.db: search history with timestamp, score
 
 /logout: Session clear
 
-🎨 Frontend (Inline or External HTML)
+ Frontend (Inline or External HTML)
 Bootstrap 5 styling with dark mode support
 
 Result page shows:
@@ -98,8 +98,7 @@ Result page shows:
 Questions
 
 Similarity score
-
-Optional Google search link
+Google search link
 
 
 
